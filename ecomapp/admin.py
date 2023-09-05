@@ -8,12 +8,19 @@ class ProductAdmin(admin.ModelAdmin):
 
 admin.site.register(Product,ProductAdmin)
 
+
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ['user', 'full_name', 'address', 'joined_on']
-
+    
 admin.site.register(Customer,CustomerAdmin)
+
+
+class CartAdmin(admin.ModelAdmin):
+    list_display = ['customer', 'total', 'created_at']
+    
+admin.site.register(Cart,CartAdmin)    
 
 
 
 admin.site.register(
-    [Admin, Category, Cart, CartProduct, Order, ProductImage])
+    [Admin, Category, CartProduct, Order, ProductImage])

@@ -24,13 +24,10 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '1x+(0yub_lq_a24fcwgt=2e)n0vk))pht0^kh13-2!0e&q*e_r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['.vercel.app']
-=======
-ALLOWED_HOSTS = ['*']
->>>>>>> de5709f203298c500a56ec978a3e917cf1fa0e74
+ALLOWED_HOSTS = ['vercel.app']
+
 
 
 # Application definition
